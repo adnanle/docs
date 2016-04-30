@@ -32,3 +32,14 @@ and add this lines
 ; support PHP7
 hhvm.php7.all = 1
 ```
+
+```
+sudo nano /etc/default/hhvm
+```
+
+and change edit this to your user and group
+
+```
+RUN_AS_USER="www-data"
+RUN_AS_GROUP="www-data"
+```
