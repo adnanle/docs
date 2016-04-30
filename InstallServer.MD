@@ -19,3 +19,16 @@ Install PHP extensions:
 sudo apt-get install php-mbstring
 sudo apt-get install php-dom
 ```
+
+HHVM Configuration
+
+```
+sudo nano /etc/hhvm/server.ini
+```
+
+and add this lines
+
+```
+; support PHP7
+hhvm.php7.all = 1
+```
