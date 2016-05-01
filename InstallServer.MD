@@ -6,16 +6,21 @@
 
 - https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-16-04
 
-# Install HHVM, Composer 
+# Install MariaDB, HHVM, Git, Composer 
 
 ```
+sudo apt-get install mariadb-client mariadb-server
 sudo apt-get install hhvm
-sudo apt-get install composer
+sudo apt-get install git composer
+sudo apt-get install libmcrypt-dev mcrypt
 ```
 
-# Install MariaDB
+# Set root password to secure the MariaDB
 
-- https://downloads.mariadb.org/mariadb/repositories
+```
+sudo systemctl start mysql
+sudo mysql_secure_installation
+```
 
 # Install PHP extensions:
 
